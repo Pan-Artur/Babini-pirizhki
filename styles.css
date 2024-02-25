@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+}
+
+body {
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Site */
+
+.header-navigation {
+    height: 100px;
+    background-color: white;
+}
+
+.about-us-list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
