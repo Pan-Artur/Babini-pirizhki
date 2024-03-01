@@ -4,48 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бабині Пиріжки</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/home.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="header-navigation navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Бабині Пиріжки</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="header-navigation navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="text-bg-warning p-3 header-container">
+                    <div class="header-logo">
+                        <a class="navbar-brand" href="#">Бабині Пиріжки</a>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Головна</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Відгуки</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Меню
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Напівфабрикати</a></li>
-                                    <li><a class="dropdown-item" href="#">Пиріжки</a></li>
-                                    <li><a class="dropdown-item" href="#">Котлети</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Шукати" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Пошук</button>
-                        </form>
+                        <div class="header-list">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Акції</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Меню
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Напівфабрикати</a></li>
+                                        <li><a class="dropdown-item" href="#">Пиріжки</a></li>
+                                        <li><a class="dropdown-item" href="#">Котлети</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-form">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Шукати" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Пошук</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main class="main">
+        <!-- Hero  -->
+        <section class="hero">
+            <div class="container hero-bg">
+                <h1 class="hero-title">
+                    "Бабині пиріжки" - смак як у дитинстві.
+                </h1>
+                <h1 class="hero-title2">
+                    Випічка за сімейним та традиційним рецептом.
+                </h1>
+                <div class="hero-button-box">
+                    <button class="btn btn-primary btn-warning hero-button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Замовити випічку</button>
+                </div>
+            </div>
+        </section>
+        <!-- About us -->
         <section class="about-us">
             <div class="container">
                 <h1 class="about-us-title">Про нас</h1>
@@ -55,9 +76,9 @@
                             <img src="./images/granny.webp" class="card-img-top" alt="granny">
                             <div class="card-body">
                                 <h5 class="card-title">Великий досвід</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">"Бабині пиріжки" - це не просто пекарня, а справжня школа смаку, де ви можете насолодитися виробами з великим досвідом та
+                                любов'ю.</p>
+                                <a href="#" class="btn btn-primary">Докладніше -></a>
                             </div>
                         </div>
                     </li>
@@ -66,9 +87,9 @@
                             <img src="./images/granny2.webp" class="card-img-top" alt="granny2">
                             <div class="card-body">
                                 <h5 class="card-title">Гарна репутація</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">У пекарні "Бабині пиріжки" ви знайдете не тільки смачну випічку, а й гарну репутацію, яку підтверджують тисячі задоволених
+                                клієнтів.</p>
+                                <a href="#" class="btn btn-primary">Докладніше -></a>
                             </div>
                         </div>
                     </li>
@@ -76,18 +97,238 @@
                         <div class="card" style="width: 18rem;">
                             <img src="./images/granny3.webp" class="card-img-top" alt="granny3">
                             <div class="card-body">
-                                <h5 class="card-title">Великий асортимент</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Багатий асортимент</h5>
+                                <p class="card-text">Незалежно від того, що ви любите - солодке чи солоне, м'яке чи хрустке - у пекарні "Бабині
+                                пиріжки" ви знайдете випічку на будь-який смак.</p>
+                                <a href="#" class="btn btn-primary">Докладніше -></a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+        <!-- location  -->
+        <section class="location">
+            <div class="container location-container">
+                <h1 class="location-title">Місцезнаходження</h1>
+                <div class="location-box">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="location-advice">Ми завжди раді бачити вас у наших затишних і сучасних приміщеннях, де ви можете насолодитися найкращиою випічкою в Україні.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Засновник і директор компанії <cite title="Source Title">"Бабині пиріжки"</cite>
+                        </figcaption>
+                    </figure>
+                    <figure class="text-end">
+                        <blockquote class="blockquote">
+                            <p class="location-advice2">Ви знайдете магазини у великих містах, таких як Київ, Львів, Одеса, Харків, Дніпро, та інших, а також у деяких мальовничих і туристичних місцях.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Головний менеджер компанії <cite title="Source Title">"Бабині пиріжки"</cite>
+                        </figcaption>
+                    </figure>
+                      <ul class="location-list">
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-kyiv.webp" class="img-fluid rounded-start" alt="kyiv shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Київ</h5>
+                                            <p class="card-text">вулиця Хрещатик 15/4, метро Майдан незалежності, м. Київ, Київська область.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2022-го року 7-го червня.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-lviv.webp" class="img-fluid rounded-start" alt="lviv shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Львів</h5>
+                                            <p class="card-text">вулиця Староєврейська, 8, Площа Ринок, Львів, Львівська область, 79000</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2023-го року 25-го грудня.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-vinnytsia.webp" class="img-fluid rounded-start" alt="vinnytsia shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Вінниця</h5>
+                                            <p class="card-text">вулиця Кармелюка, 2, Вінниця, Вінницька область, 21001</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2020-го року 18-го листопада.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-kherson.webp" class="img-fluid rounded-start" alt="kherson shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Херсон</h5>
+                                            <p class="card-text">вулиця Старообрядницька, 12, Херсон, Херсонська область, 73003</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2022-го року 11-го квітня</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-poltava.webp" class="img-fluid rounded-start" alt="poltavian shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Полтава</h5>
+                                            <p class="card-text">234 км траси Київ-Харків, вул. Шляхова, 4, Лобкова Балка, Полтавська область, 37832</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2023-го року 24-го січня.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-uzhhorod.webp" class="img-fluid rounded-start" alt="uzhhorod shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Ужгород</h5>
+                                            <p class="card-text">Слов'янська набережна, 4, м. Ужгород, Закарпатська область, 88000</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2023-го року 28-го березня.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-odesa.webp" class="img-fluid rounded-start" alt="odesa shop">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Одеса</h5>
+                                            <p class="card-text">вулиця Золотий Берег, 37А, Одеса, Одеська область, 65000</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2021-го року 26-го травня.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="location-item">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/location-dnipro.webp" class="img-fluid rounded-start" alt="dnipro bakery">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">м. Дніпро</h5>
+                                            <p class="card-text">вулиця Дмитра Донцова, 2А, Дніпро, Дніпропетровська область, 49000</p>
+                                            <p class="card-text"><small class="text-body-secondary">Було побудовано і відкрито 2022-го року 12-го грудня</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Our history  -->
+        <section class="our-history">
+            <div class="container">
+                <h1 class="our-history-title">Наша історія</h1>
+                <div class="our-history-box">
+                    <p class="font-monospace our-history-text">
+                        У 2020 році, коли світ потерпав від пандемії коронавірусу, один хлопець з Вінниці, вирішив зайнятися
+                        своїм хобі - випіканням пирогів. Він любив господарювати, і таким чином він шукав способи заробити гроші, не виходячи з
+                        дому. Він почав готувати випічку з різними начинками, такими як яблука, вишні, сир, м'ясо, капуста та інші, і
+                        продавати їх через соціальні мережі та доставку. Його пироги стали дуже популярними серед місцевих жителів, які цінували
+                        смачну та домашню їжу в умовах карантину.
+                    </p>
+                    <img src="./images/baker-boy.webp" class="img-thumbnail our-history-image" alt="baker boy">
+                </div>
+                <div class="our-history-box2">
+                    <img src="./images/two-grandmothers.webp" class="img-thumbnail our-history-image2" alt="two-grandmothers">
+                    <p class="font-monospace our-history-text2">
+                        Панковець Артур назвав свою міні-пекарню "Бабині пиріжки", на честь своїх бабусь Людмили і Тетяни, які навчили його випікати пироги. Вони
+                        також створили логотип, який зображав двох бабусь, що тримають пироги в руках. Він рекламував свою пекарню в
+                        інтернеті, розповідаючи про свою історію, свої рецепти та свою місію - дарувати людям радість та затишок за допомогою
+                        пирогів.
+                    </p>
+                </div>
+                <div class="our-history-box3">
+                <p class="font-monospace our-history-text3">
+                    З часом, його бізнес почав рости, і він зміг найняти декілька працівників, які допомагали йому випікати та доставляти
+                    пироги. Вони також відкрили свій перший магазин у центрі Вінниці, а через рік зміг відкрити другий магазин в Одесі на березі Чорного моря.
+                </p>
+                <img src="./images/exit-of-bakery.webp" class="img-thumbnail our-history-image2" alt="exit of bakery">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <!-- Hero modal  -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Головний менеджер компанії "Бабині пиріжки"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Щоб замовити випічку потрібно подзвонити за номером +0731375080 і зробити замовлення продукції.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Далі</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Директор та Засновник компанії "Бабині пиріжки"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Якщо ви все зробили для замовлення, тоді смачного та дякую що обрали нас.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Повернутися</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -46,8 +46,9 @@ body {
 
 .header-navigation {
     height: 100px;
-    background-color: white;
 }
+
+/* About us */
 
 .about-us-list {
     display: flex;
