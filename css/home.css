@@ -75,7 +75,7 @@ button {
   width: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg.webp);
+  background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././../images/hero-bg.webp);
   padding-top: 90px;
 }
 
@@ -127,6 +127,7 @@ button {
 
 .location {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .location-title {
@@ -161,6 +162,8 @@ button {
 
 .our-history {
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: antiquewhite;
 }
 
 .our-history-title {
@@ -227,4 +230,27 @@ button {
 .our-history-image2 {
   width: 300px;
   height: 300px;
+}
+
+.top {
+  padding-top: 60px;
+}
+
+.top-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.top-image {
+  width: 1000px;
+  height: 900px;
+}
+
+.top-subtitle {
+  color: #fff;
+}
+
+.top-text {
+  color: #fff;
 }/*# sourceMappingURL=home.css.map */
